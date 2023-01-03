@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUTSHELL LOGIN PAGE</title>
+<style> 
+
+Body {
+    background-image:url('OILL.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 40px;
+    
+    margin-left: 22%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ input[type=text], input[type=password]
+    { 
+        width: 70%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block;
+        border: 1px solid black; 
+       border-radius: 10px;
+        box-sizing: content-box; 
+        opacity: 0.9; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+ 
+ .container { 
+    	margin:auto;
+	    margin-top:center;
+        margin-left: center;
+	    vertical-align:middle;
+	    padding:0%;
+        width: 25%;
+        color: black;
+      	
+    } 
+
+    .name {
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    font-style: italic;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0 450px;
+    padding-top: 0;
+    text-shadow: 0 0 20px black, 0 0 20px black;
+}
+.name h1{
+    margin: 0;
+}
+.register {
+    font-size: 30px !important;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin-left: -5%;
+}
+a{
+text-decoration:none;
+color: black;
+}
+</style> 
+</head>  
+<body>  
+    <div class="name"> 
+        <h1><b>NutShell</b></h1>
+        </div>
+        <div class="register"> 
+            <p>Register Here.</p>
+            </div>
+    <form>
+        <div class="container"> 
+<div>
+            <label><b>Full Name</b> </label> 
+            <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+</div>
+<div>
+    <label><b> Email ID  &nbsp;</b> </label> 
+    <input type="text" placeholder="Enter Email" name="Enter Email" required>
+</div> 
+<div>
+            <label><b>Enter Password  &nbsp;</b> </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+</div> 
+<div>
+    <label><b>Conform Password  &nbsp;</b> </label> 
+    <input type="password" placeholder="Re enter Password" name="password" required>
+</div> 
+<div>
+    <label><b> Mobile number &nbsp;</b> </label> 
+    <input type="text" placeholder="Enter Mobile Number" name="Mobile Number" required>
+</div>    
+        
+       <button type="submit"><b>Register</b></button> 
+       
+ 
+        </form>
+</body>   
+</html>
