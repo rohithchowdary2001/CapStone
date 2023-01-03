@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUTSHELL LOGIN PAGE</title>
+<style> 
+
+Body {
+    background-image:url('OIP.jfif');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+button { 
+       background-color: green; 
+        color: white; 
+        padding: 12px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ input[type=text], input[type=password]
+    { 
+        width: 70%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block;
+        border: 1px solid black; 
+       
+        box-sizing: content-box;  
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        background-color: green; 
+        width: auto;
+        color: white; 
+        padding: 12px; 
+        margin: 10px 25px; 
+        border: none; 
+        cursor: pointer; 
+    }  
+ .container { 
+    	margin:auto;
+	    margin-top:10%;
+        margin-left: auto;
+	    vertical-align:middle;
+	    padding:2%;
+        width: 25%;
+        color: black;	
+    } 
+
+.name{
+  font-size: 50px;
+  color:black;
+  text-align: center;
+  font-style:italic;
+}
+a{
+text-decoration:none;
+color: black;
+}
+</style> 
+</head>  
+<body>  
+    <div class="name"> 
+        <h1>NutShell</h1>
+        </div>
+    <form>
+        <div class="container"> 
+<div>
+            <label><b>Username :</b> </label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+</div>
+<div>
+            <label><b>Password  &nbsp;:</b> </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+</div>     
+<div> <a href="#"> <b>Forgot password?</b> </a> </div>
+        
+       <button type="submit"><b>Signin </b></button> 
+            <button type="button" class="cancelbtn"> <b>Signup </b></button> 
+        </div>
+ 
+        </form>
+</body>   
+</html>
