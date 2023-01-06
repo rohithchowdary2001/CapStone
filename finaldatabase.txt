@@ -1,0 +1,95 @@
+SELECT `cart`.`cart_id`,
+    `cart`.`product_id`,
+    `cart`.`user_id`,
+    `cart`.`quantity`,
+    `cart`.`total_price`
+FROM `nut_shell`.`cart`;
+
+
+
+SELECT `category`.`category_id`,
+    `category`.`category_name`
+FROM `nut_shell`.`category`;
+
+
+SELECT `coupon`.`coupon_id`,
+    `coupon`.`coupon_code`,
+    `coupon`.`coupon_discount`,
+    `coupon`.`coupon_start_date`,
+    `coupon`.`coupon_expiry_date`,
+    `coupon`.`user_id`
+FROM `nut_shell`.`coupon`;
+
+
+
+SELECT `event`.`event_id`,
+    `event`.`event_name`,
+    `event`.`event_start_date`,
+    `event`.`event_end_date`,
+    `event`.`user_id`
+FROM `nut_shell`.`event`;
+
+
+
+SELECT `order`.`order_id`,
+    `order`.`order_item`,
+    `order`.`order_quantity`,
+    `order`.`order_price`,
+    `order`.`order_discount`,
+    `order`.`order_shipping_date`,
+    `order`.`user_id`,
+    `order`.`product_id`
+FROM `nut_shell`.`order`;
+
+
+
+
+SELECT `payment`.`payment_id`,
+    `payment`.`product_id`,
+    `payment`.`payment_type_id`,
+    `payment`.`created_at`,
+    `payment`.`modified_at`
+FROM `nut_shell`.`payment`;
+
+
+
+
+SELECT `payment_type`.`payment_type_id`,
+    `payment_type`.`payment_type`
+FROM `nut_shell`.`payment_type`;
+
+
+
+
+
+SELECT `product`.`product_id`,
+    `product`.`product_name`,
+    `product`.`product_desc`,
+    `product`.`product_price`,
+    `product`.`product_image`,
+    `product`.`user_id`,
+    `product`.`category_id`
+FROM `nut_shell`.`product`;
+
+
+
+
+SELECT `shipping_details`.`shipping_id`,
+    `shipping_details`.`delivery_date`,
+    `shipping_details`.`delivery_address`,
+    `shipping_details`.`order_id`,
+    `shipping_details`.`payment_id`
+FROM `nut_shell`.`shipping_details`;
+
+
+
+
+SELECT `useradmin1`.`user_id`,
+    `useradmin1`.`Fullname`,
+    `useradmin1`.`emailid`,
+    `useradmin1`.`mobileno`,
+    `useradmin1`.`password`,
+    `useradmin1`.`account_type`
+FROM `nut_shell`.`useradmin1`;
+
+
